@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task01</title>
+</head>
+
+<body>
+    <button onclick="bulbon()">on</button>
+
+    <img src="./offbulb.jpg" height="200px" width="200px" alt="" id="img1">
+    <button onclick="bulboff()">off</button>
+    <button onclick="deambulb()">deamlight</button>
+    <button onclick="hide()">hide</button>
+    <button onclick="show()">show</button>
+
+
+
+
+
+    <script>
+       function bulbon(){
+
+            document.getElementById("img1").src="./onbulb.jpg"
+        }
+
+        function bulboff(){
+            document.getElementById("img1").src="./offbulb.jpg"
+        }
+        
+        function deambulb(){
+            document.getElementById("img1").src="./deam.png"
+        }
+
+
+        function hide(){
+            document.getElementById("img1").style.display="none";
+        }
+        function show(){
+            document.getElementById("img1").style.display="block";
+        }
+
+
+    </script>
+</body>
+
+</html>
